@@ -1,0 +1,359 @@
+
+*{
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: white;
+}
+
+.container{
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+body{
+	background: beige;
+	width: 100%;
+	border: 1px solid red;
+	margin: auto;
+	max-width: 1200px;
+}
+
+.header{
+    width: 100%;
+	padding: 25px;
+	background-color: peachpuff;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+    }
+
+.logo{
+		color: purple;
+		font-size: 35px;
+		font-family: Arial;
+	}
+
+.logo:hover{
+		color: crimson;
+	}
+
+.menu{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	column-gap: 10px;
+	font-size: 13px;
+}
+
+.menu li a{ 
+	text-decoration: none;
+	color: purple;
+	font-family: arial;
+	font-weight: bold;
+	transition: 0.4s ease-in-out;
+}
+
+.menu li a:hover{
+	color: crimson;
+}
+
+.btn{
+	background-color: white;
+	 padding: 10px;
+	  border-radius: 10px;
+	  font-size: 13px;
+}
+
+h2{
+	color: rgb(226, 9, 82);
+	text-align: center;
+	animation-duration: 3s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slidein{
+	from{
+		margin-right: 100%;
+		width: 300%;
+	}
+	to{
+		margin-right: 0%;
+		width: 100%;
+	}
+}
+
+h2:hover{
+	color: rebeccapurple;
+}
+
+.hero-image {
+	margin:30px auto 0;
+	width: 90%;
+	max-width: 300px;
+}
+.hero-image img{
+	max-width: 300px;
+	max-height: 300px;
+	width: 90%;
+	height: auto;
+	border-radius: 50%;
+	
+}
+
+.my-cal {
+	padding: 10px 0;
+    text-align: center;
+}
+
+.about-me, .goals, .education, .experience, .hobbies{
+	text-align: center;
+	margin: auto;
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1pr);
+	grid-gap: 1.0rem;
+}
+.title{
+	margin: auto;
+	color: rebeccapurple;
+	padding-top: 20px;
+}
+
+.paragraph{
+	text-align: center;
+	padding: 0;
+}
+
+.goals-list{
+	text-align: left;
+		margin: auto;
+	
+}
+
+.goals-list li{
+	list-style-position: inside;
+} 
+
+.education-box{
+	width: 400px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0, 0.3);
+	background: #fff;
+	padding: 30px;
+	padding-top: 10px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.header-3{
+	padding: 10px 0;
+}
+
+.hobbies-list{
+	text-align: left;
+	margin: auto;
+}
+
+.goals-list li{
+	list-style-position: inside;
+} 
+
+/* styling for contact me page*/
+.contact-form{
+	width: 350px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0, 0.3);
+	background: #fff;
+	padding: 30px;
+	margin: 8% auto 0;
+	text-align: center;
+}
+.contact-form h2{
+	color: purple;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+ .input-box{
+	 border-radius: 15px;
+	 padding: 15px;
+	 margin: 10px 0;
+	 width: 100%;
+	 border: 1px solid #999;
+	 outline: none;
+ }
+
+ #textarea {
+    width: 80%;
+    height: 150px;
+    border-radius: 15px;
+    padding: 15px;
+	margin: 10px 0;
+}
+
+ button{
+	 color:whitesmoke;
+	  width: 50%;
+	  padding: 10px;
+	  border-radius: 20px;
+	  font-size: 15px;
+	  margin: 10px 0;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+ }
+
+ .send-btn{
+	 background-color: rebeccapurple;
+	 margin-bottom: 20px;
+	 margin-top: 20px;
+ }
+
+ .send-btn:hover {
+	 background-color: seagreen;
+ }
+
+/* styling for register page*/
+.register-form{
+	width: 350px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0, 0.3);
+	background: #fff;
+	padding: 30px;
+	margin: 8% auto 0;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.register-form h1{
+	color: purple;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+ .input-box{
+	 border-radius: 100px;
+	 padding: 15px;
+	 margin: 10px 0;
+	 width: 80%;
+	 border: 1px solid #999;
+	 outline: none;
+ }
+
+ .register-btn{
+	color:whitesmoke;
+	width: 50%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	 background-color: seagreen;
+	 margin-bottom: 20px;
+	 margin-top: 10px;
+ }
+
+ /* styling for log in page*/
+.login-form{
+	width: 300px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0, 0.3);
+	background: #fff;
+	padding: 30px;
+	margin: 8% auto 0;
+	text-align: center;
+}
+
+.login-form h2{
+	color: purple;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+ .input-details{
+	border-radius: 100px;
+	padding: 15px;
+	margin: 10px 0;
+	width: 80%;
+	border: 1px solid #999;
+	outline: none;
+ }
+	 
+  .login-btn{
+	color:whitesmoke;
+	width: 50%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: rebeccapurple;
+	margin-bottom: 20px;
+	margin-top: 20px; 
+ }
+
+ .login-btn:hover {
+	 background-color: seagreen;
+ }
+
+/* styling for calculator page*/
+   .calculator-box {
+	margin: 10px;   
+	background-color: gainsboro;
+	border: solid black 0.5px;
+	color: black;
+	border-radius: 5px;
+	width: 100%;
+	height: 65%;
+   }
+
+   .calculator {
+	padding: 20px;
+	border-radius: 1em;
+	height: 380px;
+	width: 400px;
+	margin:30px auto;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   }
+
+   .button {
+	background-color: black;
+	color: white;
+	width: 100%;
+	height: 70%;
+	border-radius: 5px;
+	border: solid black 0.5px;
+	outline: none;
+   }
+
+   .button:active {
+	background: peachpuff;
+	-webkit-box-shadow: inset 0px 0px 5px beige;
+	-moz-box-shadow: inset 0px 0px 5px beige;
+	box-shadow: inset 0px 0px 5px beige;
+   }
+
+   /* styling for footer*/
+   #my-footer{
+	background-color: peachpuff;
+	color: black;
+	padding: 20px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+@media screen and (min-width: 425px) {
+	.header {
+		flex-direction: row;
+		align-items: center;
+	}
+}

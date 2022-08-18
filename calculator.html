@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+      
+      <!--code for header-->
+      <header class="header">
+        <div class="logo">SD</div>
+        <nav class="nav-bar">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+          <li><a href="register.html" class="btn">Register</a></li>
+          <li><a href="login.html" class="btn">Log in</a></li>  
+      </ul>
+      </nav>
+      </header>
+
+        <table class= "calculator">
+         <tr>
+         <td colspan="3"> <input class = "calculator-box" type = "text" id = "result" disabled /> </td>
+         <!-- code for clearScreen -->
+         <td> <input class = "button" type = "button" value = "C" onclick = "clearScreen()" style = "background-color: #fb0066;" /> </td>
+         </tr>
+         <tr>
+         <!-- code for display -->  
+         <td> <input class= "button" type = "button" value = "1" onclick = "display('1')" /> </td>
+         <td> <input class= "button" type = "button" value = "2" onclick = "display('2')" /> </td>
+         <td> <input class= "button" type = "button" value = "3" onclick = "display('3')" /> </td>
+         <td> <input class= "button" type = "button" value = "/" onclick = "display('/')" /> </td>
+         </tr>
+         <tr>
+         <td> <input class = "button" type = "button" value = "4" onclick = "display('4')" /> </td>
+         <td> <input class = "button" type = "button" value = "5" onclick = "display('5')" /> </td>
+         <td> <input class = "button" type = "button" value = "6" onclick = "display('6')" /> </td>
+         <td> <input class = "button" type = "button" value = "-" onclick = "display('-')" /> </td>
+         </tr>
+         <tr>
+         <td> <input class = "button" type = "button" value = "7" onclick = "display('7')" /> </td>
+         <td> <input class = "button" type = "button" value = "8" onclick = "display('8')" /> </td>
+         <td> <input class = "button" type = "button" value = "9" onclick = "display('9')" /> </td>
+         <td> <input class = "button" type = "button" value = "+" onclick = "display('+')" /> </td>
+         </tr>
+         <tr>
+         <td> <input class = "button" type = "button" value = "." onclick = "display('.')" /> </td>
+         <td> <input class = "button" type = "button" value = "0" onclick = "display('0')" /> </td>
+         
+         <!-- code for calculate() function -->
+         <td> <input class = "button" type = "button" value = "=" onclick = "calculate()" style = "background-color: #fb0066;" /> </td>
+         <td> <input class = "button" type = "button" value = "%" onclick = "display('%')" /> </td>
+         </tr>
+         </table>
+
+         <footer id="my-footer">
+          &copy;2022 Sarah Daniel
+        <p><a href="sarahpdaniel@outlook.com">sarahpdaniel@outlook.com</a></p>
+      </footer>
+
+</body>
+</html>   
+
